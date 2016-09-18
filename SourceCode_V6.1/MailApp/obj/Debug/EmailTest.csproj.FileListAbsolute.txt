@@ -1,0 +1,10 @@
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\obj\Debug\EmailTest.csproj.GenerateResource.Cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\bin\Debug\EmailTest.exe
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\bin\Debug\EmailTest.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\bin\Debug\EmailAPI.dll
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\bin\Debug\EmailAPI.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\obj\Debug\EmailTest.exe
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\obj\Debug\EmailTest.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\obj\Debug\Email.MailApp.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\EmailAPI\EmailTest\obj\Debug\Email.Properties.Resources.resources

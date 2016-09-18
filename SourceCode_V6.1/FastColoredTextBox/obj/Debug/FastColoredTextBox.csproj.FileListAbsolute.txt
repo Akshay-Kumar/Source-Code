@@ -1,0 +1,35 @@
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FastColoredTextBox.resources
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FindForm.resources
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.GoToForm.resources
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.HotkeysEditorForm.resources
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.ReplaceForm.resources
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.GenerateResource.Cache
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\bin\Debug\FastColoredTextBox.XML
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\bin\Debug\FastColoredTextBox.pdb
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
+C:\Users\AKSHAY\Downloads\FastColoredTextBox-master\FastColoredTextBox-master\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\bin\Debug\FastColoredTextBox.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FastColoredTextBox.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FindForm.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.GoToForm.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.HotkeysEditorForm.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.ReplaceForm.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.GenerateResource.Cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\FastColoredTextBox\bin\Debug\FastColoredTextBox.XML
+D:\SourceCode_V6.1\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll
+D:\SourceCode_V6.1\FastColoredTextBox\bin\Debug\FastColoredTextBox.pdb
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FastColoredTextBox.resources
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FindForm.resources
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.GoToForm.resources
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.HotkeysEditorForm.resources
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.ReplaceForm.resources
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.GenerateResource.Cache
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb
+D:\SourceCode_V6.1\FastColoredTextBox\bin\Debug\FastColoredTextBox.XML

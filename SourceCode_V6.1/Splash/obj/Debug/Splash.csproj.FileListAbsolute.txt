@@ -1,0 +1,12 @@
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\bin\Debug\Splash.exe
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\bin\Debug\Splash.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\obj\Debug\Associate_with_splash_screen.AboutBox.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\obj\Debug\Associate.Form1.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\obj\Debug\Splash.Properties.Resources.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\obj\Debug\Associate_with_splash_screen.Splash.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\obj\Debug\Splash.csproj.GenerateResource.Cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\obj\Debug\Splash.exe
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\obj\Debug\Splash.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\bin\Debug\ColorProgressBar.dll
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\Splash\Splash\bin\Debug\ColorProgressBar.pdb

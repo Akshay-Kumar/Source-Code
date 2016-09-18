@@ -1,0 +1,22 @@
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\bin\Debug\Monitor.exe
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\bin\Debug\Monitor.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\bin\Debug\FastColoredTextBox.dll
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\bin\Debug\FastColoredTextBox.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\bin\Debug\FastColoredTextBox.xml
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\obj\Debug\Monitor.ProcessMonitor.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\obj\Debug\Monitor.Properties.Resources.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\obj\Debug\Monitor.csproj.GenerateResource.Cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\obj\Debug\Monitor.exe
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\Monitor\obj\Debug\Monitor.pdb
+D:\SourceCode_V6.1\Monitor\bin\Debug\Monitor.exe
+D:\SourceCode_V6.1\Monitor\bin\Debug\Monitor.pdb
+D:\SourceCode_V6.1\Monitor\bin\Debug\FastColoredTextBox.dll
+D:\SourceCode_V6.1\Monitor\bin\Debug\FastColoredTextBox.pdb
+D:\SourceCode_V6.1\Monitor\bin\Debug\FastColoredTextBox.xml
+D:\SourceCode_V6.1\Monitor\obj\Debug\Monitor.csprojResolveAssemblyReference.cache
+D:\SourceCode_V6.1\Monitor\obj\Debug\Monitor.Properties.Resources.resources
+D:\SourceCode_V6.1\Monitor\obj\Debug\Monitor.csproj.GenerateResource.Cache
+D:\SourceCode_V6.1\Monitor\obj\Debug\Monitor.exe
+D:\SourceCode_V6.1\Monitor\obj\Debug\Monitor.pdb
+D:\SourceCode_V6.1\Monitor\obj\Debug\Monitor.ProcessMonitor.resources

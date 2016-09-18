@@ -1,0 +1,21 @@
+C:\Users\AKSHAY\Desktop\notification_src\NotificationWindow\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AKSHAY\Desktop\notification_src\NotificationWindow\obj\Debug\NotificationWindow.Properties.Resources.resources
+C:\Users\AKSHAY\Desktop\notification_src\NotificationWindow\obj\Debug\NotificationWindow.csproj.GenerateResource.Cache
+C:\Users\AKSHAY\Desktop\notification_src\NotificationWindow\bin\Debug\NotificationWindow.dll
+C:\Users\AKSHAY\Desktop\notification_src\NotificationWindow\bin\Debug\NotificationWindow.pdb
+C:\Users\AKSHAY\Desktop\notification_src\NotificationWindow\obj\Debug\NotificationWindow.dll
+C:\Users\AKSHAY\Desktop\notification_src\NotificationWindow\obj\Debug\NotificationWindow.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\NotificationWindow\bin\Debug\NotificationWindow.dll
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\NotificationWindow\bin\Debug\NotificationWindow.pdb
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\NotificationWindow\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\NotificationWindow\obj\Debug\NotificationWindow.Properties.Resources.resources
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\NotificationWindow\obj\Debug\NotificationWindow.csproj.GenerateResource.Cache
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\NotificationWindow\obj\Debug\NotificationWindow.dll
+C:\Users\AKSHAY\Documents\Visual Studio 2008\Projects\SourceCode\NotificationWindow\obj\Debug\NotificationWindow.pdb
+D:\SourceCode_V6.1\NotificationWindow\bin\Debug\NotificationWindow.dll
+D:\SourceCode_V6.1\NotificationWindow\bin\Debug\NotificationWindow.pdb
+D:\SourceCode_V6.1\NotificationWindow\obj\Debug\NotificationWindow.Properties.Resources.resources
+D:\SourceCode_V6.1\NotificationWindow\obj\Debug\NotificationWindow.csproj.GenerateResource.Cache
+D:\SourceCode_V6.1\NotificationWindow\obj\Debug\NotificationWindow.dll
+D:\SourceCode_V6.1\NotificationWindow\obj\Debug\NotificationWindow.pdb
+D:\SourceCode_V6.1\NotificationWindow\obj\Debug\NotificationWindow.csprojResolveAssemblyReference.cache
