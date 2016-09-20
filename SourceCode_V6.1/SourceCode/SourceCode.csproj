@@ -108,12 +108,6 @@
     </Compile>
     <Compile Include="Utility\Ellipsis.cs" />
     <Compile Include="Utility\FileBackUp.cs" />
-    <Compile Include="FileBrowser\FileBrowser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FileBrowser\FileBrowser.Designer.cs">
-      <DependentUpon>FileBrowser.cs</DependentUpon>
-    </Compile>
     <Compile Include="Utility\FileSerializer.cs" />
     <Compile Include="Utility\FlickerFreeRichEditTextBox.cs">
       <SubType>Component</SubType>
@@ -215,9 +209,6 @@
       <DependentUpon>DocumentMapSample.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FileBrowser\FileBrowser.resx">
-      <DependentUpon>FileBrowser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Utility\FlickerFreeRichEditTextBox.resx">
       <DependentUpon>FlickerFreeRichEditTextBox.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -303,6 +294,10 @@
     <ProjectReference Include="..\FastColoredTextBox\FastColoredTextBox.csproj">
       <Project>{6DD14A85-CCFC-4774-BD26-0F5772512319}</Project>
       <Name>FastColoredTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileExplorer\FileExplorer.csproj">
+      <Project>{5639718F-DB5A-44AA-8D06-9ED0713D530F}</Project>
+      <Name>FileExplorer</Name>
     </ProjectReference>
     <ProjectReference Include="..\MailApp\MailApp.csproj">
       <Project>{B4BA95A5-8B49-4F16-9FFC-9C2CBC5C851F}</Project>

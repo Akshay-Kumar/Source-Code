@@ -160,6 +160,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.miniToolStrip = new System.Windows.Forms.ToolStrip();
             this.lblUser = new AutoEllipsis.LabelEllipsis();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.tabControl1.SuspendLayout();
             this.tabSourceCode.SuspendLayout();
             this.sourceCodeToolStrip.SuspendLayout();
@@ -1034,7 +1036,9 @@
             this.toolStripSeparator9,
             this.tsBtnLogViewer,
             this.toolStripSeparator11,
-            this.toolStripButton3});
+            this.toolStripButton3,
+            this.toolStripSeparator12,
+            this.toolStripButton4});
             this.archiveToolStrip.Location = new System.Drawing.Point(0, 0);
             this.archiveToolStrip.Name = "archiveToolStrip";
             this.archiveToolStrip.Size = new System.Drawing.Size(720, 25);
@@ -1418,6 +1422,21 @@
             this.lblUser.TabIndex = 6;
             this.lblUser.Text = "UserName                    ";
             // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Text = "toolStripButton4";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
             // SourceCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1599,6 +1618,8 @@
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
     }
 }
 

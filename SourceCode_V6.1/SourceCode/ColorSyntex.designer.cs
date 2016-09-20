@@ -76,6 +76,9 @@ namespace SourceCode
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.Delete = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.Compare = new System.Windows.Forms.ToolStripMenuItem();
+            this.CodeWithFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileWithFile = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectAll = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Font = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,9 +86,6 @@ namespace SourceCode
             this.Backcolor = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Refresh = new System.Windows.Forms.ToolStripMenuItem();
-            this.Compare = new System.Windows.Forms.ToolStripMenuItem();
-            this.CodeWithFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.FileWithFile = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new UtilitPackage.FlickerFreeRichEditTextBox();
             this.cmsSourceCode.SuspendLayout();
             this.SuspendLayout();
@@ -182,7 +182,7 @@ namespace SourceCode
             this.saveCodeFileDialog.DefaultExt = "doc";
             this.saveCodeFileDialog.FileName = "Untitled";
             this.saveCodeFileDialog.Filter = "Word Documents (*.doc)|*.doc|C (*.c)|*.c|C++ (*.cpp)|*.cpp|C# (*.cs)|*.cs|JAVA (*" +
-                ".java)|*.java|SQL (*.sql)|*.sql|Text (*.txt)|*.txt|Pdf (*.pdf)|*.pdf;";
+    ".java)|*.java|SQL (*.sql)|*.sql|Text (*.txt)|*.txt|Pdf (*.pdf)|*.pdf;";
             this.saveCodeFileDialog.Title = "Save Code File";
             // 
             // printPreviewSourceCodeDialog
@@ -283,6 +283,30 @@ namespace SourceCode
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(123, 6);
             // 
+            // Compare
+            // 
+            this.Compare.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CodeWithFile,
+            this.FileWithFile});
+            this.Compare.Image = global::SourceCode.Properties.Resources.Document_Copy_icon;
+            this.Compare.Name = "Compare";
+            this.Compare.Size = new System.Drawing.Size(126, 22);
+            this.Compare.Text = "Compare";
+            // 
+            // CodeWithFile
+            // 
+            this.CodeWithFile.Name = "CodeWithFile";
+            this.CodeWithFile.Size = new System.Drawing.Size(147, 22);
+            this.CodeWithFile.Text = "Code with file";
+            this.CodeWithFile.Click += new System.EventHandler(this.CodeWithFile_Click);
+            // 
+            // FileWithFile
+            // 
+            this.FileWithFile.Name = "FileWithFile";
+            this.FileWithFile.Size = new System.Drawing.Size(147, 22);
+            this.FileWithFile.Text = "File with file";
+            this.FileWithFile.Click += new System.EventHandler(this.FileWithFile_Click);
+            // 
             // SelectAll
             // 
             this.SelectAll.Image = global::SourceCode.Properties.Resources.Cursor_Select_icon;
@@ -338,46 +362,22 @@ namespace SourceCode
             this.Refresh.ToolTipText = "Refresh";
             this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
-            // Compare
-            // 
-            this.Compare.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CodeWithFile,
-            this.FileWithFile});
-            this.Compare.Image = global::SourceCode.Properties.Resources.Document_Copy_icon;
-            this.Compare.Name = "Compare";
-            this.Compare.Size = new System.Drawing.Size(126, 22);
-            this.Compare.Text = "Compare";
-            // 
-            // CodeWithFile
-            // 
-            this.CodeWithFile.Name = "CodeWithFile";
-            this.CodeWithFile.Size = new System.Drawing.Size(147, 22);
-            this.CodeWithFile.Text = "Code with file";
-            this.CodeWithFile.Click += new System.EventHandler(this.CodeWithFile_Click);
-            // 
-            // FileWithFile
-            // 
-            this.FileWithFile.Name = "FileWithFile";
-            this.FileWithFile.Size = new System.Drawing.Size(147, 22);
-            this.FileWithFile.Text = "File with file";
-            this.FileWithFile.Click += new System.EventHandler(this.FileWithFile_Click);
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(576, 72);
+            this.richTextBox1.Size = new System.Drawing.Size(576, 51);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
-            this.richTextBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.richTextBox1_MouseDown);
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.richTextBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.richTextBox1_MouseDown);
             // 
             // ColorSyntax
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(576, 72);
+            this.ClientSize = new System.Drawing.Size(576, 51);
             this.Controls.Add(this.richTextBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Menu = this.sourceMainMenu;

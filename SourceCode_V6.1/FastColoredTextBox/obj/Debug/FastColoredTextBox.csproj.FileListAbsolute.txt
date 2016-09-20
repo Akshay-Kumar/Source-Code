@@ -33,3 +33,4 @@ D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.Genera
 D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
 D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb
 D:\SourceCode_V6.1\FastColoredTextBox\bin\Debug\FastColoredTextBox.XML
+D:\SourceCode_V6.1\FastColoredTextBox\obj\Debug\FastColoredTextBox.csprojResolveAssemblyReference.cache

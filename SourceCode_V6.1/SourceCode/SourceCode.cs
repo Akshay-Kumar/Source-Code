@@ -1236,12 +1236,16 @@ namespace SourceCode
         }
         public static string GetPath(string relativePath)
         {
-            return Path.Combine(DIRECTORY.GetApplicationPath().Replace("DATA", "icons"), relativePath);
+            return Path.Combine(DIRECTORY.GetApplicationPath().Replace(GetDirectoryName(DIRECTORY.GetApplicationPath()), DIRECTORY.icons), relativePath);
         }
         public static void SetDGVColumnImage(DataGridView dgv, int index, string btnName, Icon icon)
         {
             DataGridViewImageCell buttonCell = (DataGridViewImageCell)dgv.Rows[index].Cells[btnName];
             buttonCell.Value = icon;
+        }
+        public static string GetDirectoryName(string path)
+        {
+            return (path.Substring(path.LastIndexOf("\\") + 1)).Trim();
         }
         private void SetDGVButtonColumnEnable(DataGridView dgv,int index,string btnName,bool enabled)
         {
@@ -2633,7 +2637,7 @@ namespace SourceCode
                     CODE.ProgCode = SOURCE_CODE;
                     if (CreateFileBackup(dbTimeStamp, CODE, langName, prog_id, out createdFilePath))
                     {
-                        string relativePath = createdFilePath.Replace(FileBackUp.RootDirectory.Replace("DATA", ""), "").Trim();
+                        string relativePath = createdFilePath.Replace(FileBackUp.RootDirectory.Replace(GetDirectoryName(FileBackUp.RootDirectory), string.Empty), string.Empty).Trim();
                         if (relativePath.Equals(filePath))
                         {
                             MessageBox.Show(string.Format("BACKUP FILE {0} CREATED SUCCESSFULLY!!!", Path.GetFileName(createdFilePath)));
@@ -2654,7 +2658,7 @@ namespace SourceCode
                         File.Delete(existingFilePath);
                         CreateFileBackup(dbTimeStamp, CODE, langName, prog_id, out createdFilePath);
                         CODE.ProgramId = prog_id;
-                        string relativePath = createdFilePath.Replace(FileBackUp.RootDirectory.Replace("DATA", ""), "");
+                        string relativePath = createdFilePath.Replace(FileBackUp.RootDirectory.Replace(GetDirectoryName(FileBackUp.RootDirectory), string.Empty), string.Empty);
                         CODE.Filepath = relativePath;
                         sourceDal.InsertOrUpdateProgramCode(CODE, userData.UserData);
                     }
@@ -3119,7 +3123,7 @@ namespace SourceCode
                     File.Delete(existingFilePath);
                     if (CreateFileBackup(timeStamp, code, langName, prog_id, out path))
                     {
-                        string relativePath = path.Replace(FileBackUp.RootDirectory.Replace("DATA", ""), "");
+                        string relativePath = path.Replace(FileBackUp.RootDirectory.Replace(GetDirectoryName(FileBackUp.RootDirectory), string.Empty), string.Empty);
                         code.Filepath = relativePath;
                     }
                     else
@@ -3131,7 +3135,7 @@ namespace SourceCode
                 {
                     if (CreateFileBackup(timeStamp, code, langName, prog_id, out path))
                     {
-                        string relativePath = path.Replace(FileBackUp.RootDirectory.Replace("DATA", ""), "");
+                        string relativePath = path.Replace(FileBackUp.RootDirectory.Replace(GetDirectoryName(FileBackUp.RootDirectory), string.Empty), string.Empty);
                         code.Filepath = relativePath;
                     }
                     else
@@ -3210,7 +3214,7 @@ namespace SourceCode
                     {
                         if (CreateFileBackup(timeStamp, code, langName, programId, out path))
                         {
-                            string relativePath = path.Replace(FileBackUp.RootDirectory.Replace("DATA", ""), "");
+                            string relativePath = path.Replace(FileBackUp.RootDirectory.Replace(GetDirectoryName(FileBackUp.RootDirectory), string.Empty), string.Empty);
                             code.Filepath = relativePath;
                             if (sourceDal.InsertOrUpdateProgramCode(code, user))
                             {
@@ -3758,10 +3762,48 @@ namespace SourceCode
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            string message = Utility.UTIL.ProcStartargs("notepad", DIRECTORY.GetConfigFilePath() + "\\" + "config.ini");
-            GlobalPageTracker.loginObj.ShowPopupMessage("Notification", message, Login.NotificationType.Information);
+            string message = Utility.UTIL.ProcStartargs("notepad", DIRECTORY.GetConfigFileName());
+            GlobalPageTracker.loginObj.ShowPopupMessage("Notification", message + "\n" + Path.GetFileName(DIRECTORY.GetConfigFileName()), Login.NotificationType.Information);
         }
         #endregion
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            FileExplorer.Explorer explorer = new FileExplorer.Explorer(GetDirectoryListing());
+            explorer.Show();
+        }
+        private DataTable GetDirectoryListing()
+        {
+            DataTable dtDirectory = new DataTable("tbl_Directory");
+            try
+            {
+                dtDirectory.Columns.Add("Directory", typeof(string));
+                dtDirectory.Columns.Add("File", typeof(string));
+                DataRow newRow = null;
+                FileBackUp b = new FileBackUp();
+                ArrayList directoryList = b.GetDirectory(FileBackUp.RootDirectory, true);
+                foreach (string directory in directoryList)
+                {
+                    ArrayList fileList = b.GetFiles(directory, true);
+                    foreach (string file in fileList)
+                    {
+                        if (!string.IsNullOrEmpty(file))
+                        {
+                            newRow = dtDirectory.NewRow();
+                            newRow["Directory"] = directory;
+                            newRow["File"] = file;
+                            dtDirectory.Rows.Add(newRow);
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.ErrorRoutine(ex);
+            }
+            return dtDirectory;
+        }
     }
 }
 

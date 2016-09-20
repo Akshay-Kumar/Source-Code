@@ -119,4 +119,5 @@ D:\SourceCode_V6.1\SourceCode\obj\Debug\SourceCode.csproj.GenerateResource.Cache
 D:\SourceCode_V6.1\SourceCode\obj\Debug\SourceCode.exe
 D:\SourceCode_V6.1\SourceCode\obj\Debug\SourceCode.pdb
 D:\SourceCode_V6.1\SourceCode\obj\Debug\SourceCode.ManageColumns.resources
-D:\SourceCode_V6.1\SourceCode\obj\Debug\SourceCode.FileBrowser.FileBrowser.resources
+D:\SourceCode_V6.1\SourceCode\bin\Debug\TreeImageMix.exe
+D:\SourceCode_V6.1\SourceCode\bin\Debug\TreeImageMix.pdb

@@ -451,10 +451,10 @@ namespace SourceCode
                 fs.Close();
                 richTextBox1.Text = string.Empty;
                 richTextBox1.Text = s.Trim();
-                richTextBox1.SelectAll();
-                richTextBox1.Refresh();
-                FlickerFreeRichEditTextBox._Paint = false;
-                MakeColorSyntaxForAllText(richTextBox1.Text.Trim());
+                //richTextBox1.SelectAll();
+                //richTextBox1.Refresh();
+                //FlickerFreeRichEditTextBox._Paint = false;
+                //MakeColorSyntaxForAllText(richTextBox1.Text.Trim());
                 FlickerFreeRichEditTextBox._Paint = true;
                 if (ADD_SOURCECODE)
                 {

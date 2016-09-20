@@ -186,11 +186,11 @@ namespace SourceCode
 
         private void WatchFile(object sender, EventArgs e)
         {
-            string file = Path.GetDirectoryName(DIRECTORY.GetLoggerFilePath());
+            string directoryName = Path.GetDirectoryName(DIRECTORY.GetLoggerFilePath());
             f_Watcher = new FileSystemWatcher();
             //filter should be just the filename not complete path
             f_Watcher.Filter = Path.GetFileName(DIRECTORY.GetLoggerFilePath());
-            f_Watcher.Path = file;
+            f_Watcher.Path = directoryName;
             f_Watcher.NotifyFilter =
                 NotifyFilters.CreationTime |
                 NotifyFilters.Size |
@@ -287,6 +287,7 @@ namespace SourceCode
         /// <param name="e"></param>
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            Utility.UTIL.LoadConfigurations();
             DataTable dtUserdata = null;
             string errorMessage = null;
             try

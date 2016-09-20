@@ -827,6 +827,7 @@ namespace SourceCode.Utility
         public static void LoadConfigurations()
         {
             Dictionary<string, string> config = GetConfigurations();
+            if(config !=null)
             if (config.Count > 0)
             {
                 foreach (var pair in config)
@@ -837,11 +838,11 @@ namespace SourceCode.Utility
                         {
                             case "delayTime": SourceCode.DelayTime = Convert.ToInt32(pair.Value.Trim());
                                 break;
-                            case "logFilePath": Logger.ErrorLog.LogFilePath = pair.Value.Trim();
+                            case "logFile": Logger.ErrorLog.LogFilePath = pair.Value.Trim();
                                 break;
-                            case "appPath": FileBackUp.RootDirectory = pair.Value.Trim();
+                            case "appDirectory": FileBackUp.RootDirectory = pair.Value.Trim();
                                 break;
-                            case "processorMonitorPath": Monitor.ProcessMonitor.LogFilePath = pair.Value.Trim();
+                            case "processorMonitorFile": Monitor.ProcessMonitor.LogFilePath = pair.Value.Trim();
                                 break;
                         }
                     }
@@ -854,27 +855,27 @@ namespace SourceCode.Utility
             string file = string.Empty;
             Dictionary<string, string> config = new Dictionary<string, string>();
             FileBackUp b = new FileBackUp();
-            ArrayList list = b.GetFiles(DIRECTORY.GetConfigFilePath(), false);
-            if (list.Count > 0)
+            file = DIRECTORY.GetConfigFileName();
+            if (!string.IsNullOrEmpty(file))
             {
-                foreach (string f in list)
+                string str = b.ReadFile(file);
+                string[] configArray = str.Split('|', '\n');
+                if (configArray.Length > 0 && !string.Empty.Equals(str))
                 {
-                    file = f;
-                }
-            }
-            string str = b.ReadFile(file);
-            string[] configArray = str.Split('|', '\n');
-            if (configArray.Length > 0 && !string.Empty.Equals(str))
-            {
-                for (int i = 0; i < configArray.Length; i++)
-                {
-                    if (i % 2 == 0)
+                    for (int i = 0; i < configArray.Length; i++)
                     {
-                        config.Add(configArray[i].Trim(), configArray[i + 1].Trim());
+                        if (i % 2 == 0)
+                        {
+                            config.Add(configArray[i].Trim(), configArray[i + 1].Trim());
+                        }
                     }
                 }
+                return config;
             }
-            return config;
+            else
+            {
+                return null;
+            }
         }
         
         public static string ProcStartargs(string name, string args)

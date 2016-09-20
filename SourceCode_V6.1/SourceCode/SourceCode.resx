@@ -282,6 +282,17 @@
   <metadata name="archiveToolStrip.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVFhH7VJRDoUgDOPoHI2b8URYAN1cnwyj0Sb9KI62
+        Au7DBwne+4iwjNuDC+NYxu1AxiGElTG6lZI2L9KGU2CrOZoUoD/hAhDSfpQltiItcsbWVAvMRi7gUgFi
+        xhUF6glABfrHt339/2paS+FqAc7ASkMFEjSjsxq+AslgVD/nCiSDUQ0X0IzO6hsUAB4ht9FKwycgGYzq
+        G1zBE95Ahm0waegEjgxG9WGByjqoa476niVSKtAPzuIS2Rdo0H68gjtwQzP5ajj3A38nidtz9JKHAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
   <metadata name="dgvDeletedPrograms.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -366,7 +377,6 @@
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAMAEBAQAAAABAAoAQAANgAAACAgEAAAAAQA6AIAAF4BAAAwMAAAAAAYAKgcAABGBAAAKAAAABAA

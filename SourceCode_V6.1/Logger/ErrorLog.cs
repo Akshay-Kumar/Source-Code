@@ -31,10 +31,15 @@ namespace Logger
 		{
 			set
 			{
-                FileInfo fileInf0 = new FileInfo(value);
+                FileInfo fileInf0 = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + "\\" +DEFAULT_LOG_FILE.DefaultLogFolder + "\\" + value);
                 if (!fileInf0.Exists)
-                    fileInf0.Create();
-                strLogFilePath = fileInf0.FullName;	
+                {
+                    if (CheckDirectory(fileInf0.FullName))
+                    {
+                        fileInf0.Create().Close();
+                        strLogFilePath = fileInf0.FullName;
+                    }
+                }
 			}
 			get
 			{
@@ -285,11 +290,14 @@ namespace Logger
 
                 // search the file below the current directory
                 string retFilePath = baseDir + "" + DEFAULT_LOG_FILE.DefaultLogFolder + "\\" + DEFAULT_LOG_FILE.DefaultLogFile;
-                // check if log file needs to be rolled
-                loggerRoll(retFilePath);
+                
                 // if exists, return the path
                 if (File.Exists(retFilePath) == true)
+                {
+                    // check if log file needs to be rolled
+                    loggerRoll(retFilePath);
                     return retFilePath;
+                }
                 //create a text file
                 else
                 {

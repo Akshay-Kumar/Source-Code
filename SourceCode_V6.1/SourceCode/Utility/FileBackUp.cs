@@ -18,13 +18,23 @@ namespace SourceCode
 
         public static string RootDirectory
         {
-            get { return FileBackUp.rootDirectory; }
+            get 
+            {
+                if (string.IsNullOrEmpty(rootDirectory))
+                {
+                    DirectoryInfo dir = new DirectoryInfo(DIRECTORY.GetApplicationPath());
+                    if (!dir.Exists)
+                        dir.Create();
+                    rootDirectory = dir.FullName;
+                }
+                return rootDirectory;
+            }
             set 
-            { 
+            {
                 DirectoryInfo dir = new DirectoryInfo(value);
                 if(!dir.Exists)
                     dir.Create();
-                FileBackUp.rootDirectory = dir.FullName; 
+                rootDirectory = dir.FullName; 
             }
         }
         ClsEncryption encryptor = null;
@@ -33,10 +43,6 @@ namespace SourceCode
             lstFilesFound = new ArrayList();
             encryptor = new ClsEncryption();
             lstDirectoriesFound = new ArrayList();
-            if (string.IsNullOrEmpty(rootDirectory))
-            {
-                rootDirectory = DIRECTORY.GetApplicationPath();
-            }
         }
 
         public ArrayList GetDirectory(string sDir, bool clearList)
@@ -297,6 +303,7 @@ namespace SourceCode
     #region Directory
     public class DIRECTORY
     {
+        public const string icons = "icons";
         public static string GetApplicationPath()
         {
             string strAppPath = string.Empty;
@@ -320,18 +327,37 @@ namespace SourceCode
             {
                 return string.Empty;
             }
-            return strAppPath + "DATA";
+            DirectoryInfo dInfo = new DirectoryInfo(strAppPath + "DATA");
+            if (!dInfo.Exists)
+                dInfo.Create();
+            return dInfo.FullName;
         }
         public static string GetLoggerFilePath()
         {
             if (ErrorLog.LogFilePath == string.Empty)
-                return GetApplicationPath().Replace("DATA", "bin\\Debug\\log");
+            {
+                DirectoryInfo dInfo = new DirectoryInfo(GetApplicationPath().Replace("DATA", "bin\\Debug\\log"));
+                if (!dInfo.Exists)
+                    dInfo.Create();
+                return dInfo.FullName;
+            }
             else
+            {
                 return ErrorLog.LogFilePath;
+            }
         }
         public static string GetConfigFilePath()
         {
-            return GetApplicationPath().Replace("DATA", "bin\\Debug\\config");
+            DirectoryInfo dInfo = new DirectoryInfo(GetApplicationPath().Replace("DATA", "bin\\Debug\\config"));
+            if (!dInfo.Exists)
+                dInfo.Create();
+            return dInfo.FullName;
+        }
+        public static string GetConfigFileName()
+        {
+            if(!File.Exists(GetConfigFilePath() + "\\" + "config.ini"))
+                File.Create(GetConfigFilePath() + "\\" + "config.ini").Close();
+            return GetConfigFilePath() + "\\" + "config.ini";
         }
     }
     #endregion

@@ -1,0 +1,7 @@
+D:\SourceCode_V6.1\FileExplorer\bin\Debug\TreeImageMix.exe
+D:\SourceCode_V6.1\FileExplorer\bin\Debug\TreeImageMix.pdb
+D:\SourceCode_V6.1\FileExplorer\obj\Debug\FileExplorer.csproj.GenerateResource.Cache
+D:\SourceCode_V6.1\FileExplorer\obj\Debug\TreeImageMix.exe
+D:\SourceCode_V6.1\FileExplorer\obj\Debug\TreeImageMix.pdb
+D:\SourceCode_V6.1\FileExplorer\obj\Debug\FileExplorer.Explorer.resources
+D:\SourceCode_V6.1\FileExplorer\obj\Debug\FileExplorer.Properties.Resources.resources
